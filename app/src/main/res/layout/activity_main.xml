@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#84afd1ff">
+
+    <TextView
+        android:textStyle="italic"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerHorizontal="true"
+        android:text="@string/Header"
+        android:id="@+id/Header"
+        android:gravity="center"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Spotify_Streamer"
+        android:id="@+id/Spotify_Streamer_btn"
+        android:layout_below="@+id/Header"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:enabled="true"
+        android:layout_margin="10dp"
+        android:onClick="SpotifyStreamerClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Football_Scores"
+        android:id="@+id/Football_Scores"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Spotify_Streamer_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:enabled="true"
+        android:layout_margin="10dp"
+        android:onClick="FootballScoresClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Library_App"
+        android:id="@+id/Library_App"
+        android:layout_below="@+id/Football_Scores"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:enabled="true"
+        android:layout_margin="10dp"
+        android:onClick="LibraryAppClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Build_It_Bigger"
+        android:id="@+id/Build_It_Bigger"
+        android:layout_below="@+id/Library_App"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:enabled="true"
+        android:layout_margin="10dp"
+        android:onClick="BuildItBiggerClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/XYZ_Reader"
+        android:id="@+id/XYZ_Reader"
+        android:layout_below="@+id/Build_It_Bigger"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:enabled="true"
+        android:layout_margin="10dp"
+        android:onClick="XYZReaderClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Capstone"
+        android:id="@+id/Capstone"
+        android:layout_below="@+id/XYZ_Reader"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:enabled="true"
+        android:layout_margin="10dp"
+        android:onClick="CapstoneClick"
+        android:background="#ffff6134" />
+
+</RelativeLayout>
