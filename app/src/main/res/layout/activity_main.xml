@@ -18,88 +18,45 @@
         />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MyButtonStyle"
         android:text="@string/Spotify_Streamer"
         android:id="@+id/Spotify_Streamer_btn"
         android:layout_below="@+id/Header"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:enabled="true"
-        android:layout_margin="10dp"
         android:onClick="SpotifyStreamerClick"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MyButtonStyle"
         android:text="@string/Football_Scores"
         android:id="@+id/Football_Scores"
-        android:layout_marginTop="20dp"
         android:layout_below="@+id/Spotify_Streamer_btn"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:enabled="true"
-        android:layout_margin="10dp"
         android:onClick="FootballScoresClick"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MyButtonStyle"
         android:text="@string/Library_App"
         android:id="@+id/Library_App"
         android:layout_below="@+id/Football_Scores"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:enabled="true"
-        android:layout_margin="10dp"
         android:onClick="LibraryAppClick"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MyButtonStyle"
         android:text="@string/Build_It_Bigger"
         android:id="@+id/Build_It_Bigger"
         android:layout_below="@+id/Library_App"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:enabled="true"
-        android:layout_margin="10dp"
         android:onClick="BuildItBiggerClick"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MyButtonStyle"
         android:text="@string/XYZ_Reader"
         android:id="@+id/XYZ_Reader"
         android:layout_below="@+id/Build_It_Bigger"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:enabled="true"
-        android:layout_margin="10dp"
         android:onClick="XYZReaderClick"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MyButtonStyle"
         android:text="@string/Capstone"
         android:id="@+id/Capstone"
         android:layout_below="@+id/XYZ_Reader"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:enabled="true"
-        android:layout_margin="10dp"
         android:onClick="CapstoneClick"
         android:background="#ffff6134" />
 
