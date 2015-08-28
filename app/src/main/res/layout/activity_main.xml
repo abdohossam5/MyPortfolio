@@ -22,42 +22,42 @@
         android:text="@string/Spotify_Streamer"
         android:id="@+id/Spotify_Streamer_btn"
         android:layout_below="@+id/Header"
-        android:onClick="SpotifyStreamerClick"/>
+        android:onClick="ButtonClick"/>
 
     <Button
         style="@style/MyButtonStyle"
         android:text="@string/Football_Scores"
         android:id="@+id/Football_Scores"
         android:layout_below="@+id/Spotify_Streamer_btn"
-        android:onClick="FootballScoresClick"/>
+        android:onClick="ButtonClick"/>
 
     <Button
         style="@style/MyButtonStyle"
         android:text="@string/Library_App"
         android:id="@+id/Library_App"
         android:layout_below="@+id/Football_Scores"
-        android:onClick="LibraryAppClick"/>
+        android:onClick="ButtonClick"/>
 
     <Button
         style="@style/MyButtonStyle"
         android:text="@string/Build_It_Bigger"
         android:id="@+id/Build_It_Bigger"
         android:layout_below="@+id/Library_App"
-        android:onClick="BuildItBiggerClick"/>
+        android:onClick="ButtonClick"/>
 
     <Button
         style="@style/MyButtonStyle"
         android:text="@string/XYZ_Reader"
         android:id="@+id/XYZ_Reader"
         android:layout_below="@+id/Build_It_Bigger"
-        android:onClick="XYZReaderClick"/>
+        android:onClick="ButtonClick"/>
 
     <Button
         style="@style/MyButtonStyle"
         android:text="@string/Capstone"
         android:id="@+id/Capstone"
         android:layout_below="@+id/XYZ_Reader"
-        android:onClick="CapstoneClick"
+        android:onClick="ButtonClick"
         android:background="#ffff6134" />
 
 </RelativeLayout>

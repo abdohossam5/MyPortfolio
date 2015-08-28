@@ -1,7 +1,7 @@
 package com.ahoss_000.myportfolio;
 
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Toast;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,35 +39,29 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void SpotifyStreamerClick(View view){
-        Toast toast = Toast.makeText(getApplicationContext(),"This will open my Spotify", Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.BOTTOM|Gravity.CENTER,0,0);
-                toast.show();
-    }
+    public void ButtonClick(View view){
+        Toast toast = new Toast(getApplicationContext());
+        switch (view.getId()){
+            case R.id.Spotify_Streamer_btn:
+                toast = Toast.makeText(getApplicationContext(),"This will open my Spotify", Toast.LENGTH_LONG);
+                break;
+            case R.id.Football_Scores:
+                toast = Toast.makeText(getApplicationContext(),"This will open my Football Scores APP", Toast.LENGTH_LONG);
+                break;
+            case R.id.Library_App:
+                toast = Toast.makeText(getApplicationContext(),"This will open my Library App", Toast.LENGTH_LONG);
+                break;
+            case R.id.Build_It_Bigger:
+                toast = Toast.makeText(getApplicationContext(),"This will open my Build It Bigger App", Toast.LENGTH_LONG);
+                break;
+            case R.id.XYZ_Reader:
+                toast = Toast.makeText(getApplicationContext(),"This will open my XYZ Reader App", Toast.LENGTH_LONG);
+                break;
+            case R.id.Capstone:
+                toast = Toast.makeText(getApplicationContext(),"This will open my Own App", Toast.LENGTH_LONG);
+                break;
 
-    public void FootballScoresClick(View view){
-        Toast toast = Toast.makeText(getApplicationContext(),"This will open my Football Scores APP", Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.BOTTOM|Gravity.CENTER,0,0);
-        toast.show();
-    }
-    public void LibraryAppClick(View view){
-        Toast toast = Toast.makeText(getApplicationContext(),"This will open my Library App", Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.BOTTOM|Gravity.CENTER,0,0);
-        toast.show();
-    }
-    public void BuildItBiggerClick(View view){
-        Toast toast = Toast.makeText(getApplicationContext(),"This will open my Build It Bigger App", Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.BOTTOM|Gravity.CENTER,0,0);
-        toast.show();
-    }
-    public void XYZReaderClick(View view){
-        Toast toast = Toast.makeText(getApplicationContext(),"This will open my XYZ Reader App", Toast.LENGTH_LONG);
-        toast.setGravity(Gravity.BOTTOM|Gravity.CENTER,0,0);
-        toast.show();
-    }
-
-    public void CapstoneClick(View view){
-        Toast toast = Toast.makeText(getApplicationContext(),"This will open my Own App", Toast.LENGTH_LONG);
+        }
         toast.setGravity(Gravity.BOTTOM|Gravity.CENTER,0,0);
         toast.show();
     }
